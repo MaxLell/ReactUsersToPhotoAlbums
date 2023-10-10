@@ -1,6 +1,9 @@
+import UsersList from './components/UsersList';
 function App() {
   return (
-    <div className="text-3xl font-bold underline">Appsi Daisy!</div>
+    <div className="container mx-auto">
+      <UsersList />
+    </div>
   );
 }
 
