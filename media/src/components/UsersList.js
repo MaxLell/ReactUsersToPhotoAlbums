@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchUsers } from '../store';
+import Skeleton from './skeleton';
 
 export default function UsersList() {
   const dispatch = useDispatch();
