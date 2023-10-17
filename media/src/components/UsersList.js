@@ -15,7 +15,7 @@ export default function UsersList() {
   }, [dispatch]);
 
   if (isLoading) {
-    return <div>Loading ....</div>;
+    return <Skeleton nofGreyBoxes={10} className="h-10 w-full" />;
   }
   if (error) {
     return <div>Oups Bugsies happened</div>;
