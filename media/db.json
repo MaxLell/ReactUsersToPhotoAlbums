@@ -1,7 +1,38 @@
 {
-    "users": [
-        {"id":1, "name": "Myra"}
-    ],
-    "albums": [],
-    "photos": []
+  "users": [
+    {
+      "id": 1,
+      "name": "Myra"
+    },
+    {
+      "name": "Naomi Heidenreich",
+      "id": 2
+    },
+    {
+      "name": "Ricky Moen",
+      "id": 3
+    },
+    {
+      "name": "Norman Kuphal",
+      "id": 4
+    },
+    {
+      "name": "Constance Leannon",
+      "id": 5
+    },
+    {
+      "name": "Dallas Littel",
+      "id": 6
+    },
+    {
+      "name": "Rex Flatley",
+      "id": 7
+    },
+    {
+      "name": "Carroll Lesch",
+      "id": 8
+    }
+  ],
+  "albums": [],
+  "photos": []
 }
