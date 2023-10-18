@@ -1,35 +1,27 @@
-import { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import { fetchUsers, addUser } from '../store';
 import Button from './Button';
 import Skeleton from './skeleton';
+import { useThunk } from '../hooks/use-thunk';
 
 export default function UsersList() {
-  const [isLoadingUsers, setIsLoadingUsers] = useState(false);
-  const [loadingUsersError, setLoadingUsersError] = useState(null);
+  const [doFetchUsers, isLoadingUsers, loadingUsersError] =
+    useThunk(fetchUsers);
 
-  const [isCreatingUser, setIsCreatingUser] = useState(false);
-  const [creatingUserError, setCreatingUserError] = useState(null);
+  const [doCreateUser, isCreatingUser, creatingUserError] =
+    useThunk(addUser);
 
-  const dispatch = useDispatch();
   const { listOfUsers } = useSelector((state) => {
     return state.users;
   });
 
   useEffect(() => {
-    setIsLoadingUsers(true);
-    dispatch(fetchUsers())
-      .unwrap()
-      .catch((err) => setLoadingUsersError(err))
-      .finally(() => setIsLoadingUsers(false));
-  }, [dispatch]);
+    doFetchUsers();
+  }, [doFetchUsers]);
 
   const handleUserAdd = () => {
-    setIsCreatingUser(true); // starts the loading spinner
-    dispatch(addUser())
-      .unwrap()
-      .catch((err) => setCreatingUserError(err))
-      .finally(() => setIsCreatingUser(false)); // disables the loading spinner
+    doCreateUser();
   };
 
   if (isLoadingUsers) {
@@ -62,6 +54,4 @@ export default function UsersList() {
       {renderedUsers}
     </div>
   );
-
-  return 'USersList';
 }
