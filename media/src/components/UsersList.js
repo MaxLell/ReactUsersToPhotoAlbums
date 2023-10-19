@@ -24,21 +24,22 @@ export default function UsersList() {
     doCreateUser();
   };
 
+  let content;
   if (isLoadingUsers) {
-    return <Skeleton nofGreyBoxes={10} className="h-10 w-full" />;
-  }
-  if (loadingUsersError) {
-    return <div>Oups Bugsies happened</div>;
-  }
-  const renderedUsers = listOfUsers.map((user) => {
-    return (
-      <div key={user.id} className="mb-2 border rounded">
-        <div className="flex p-2 justify-between items-center cursor-pointer">
-          {user.name}
+    content = <Skeleton nofGreyBoxes={10} className="h-10 w-full" />;
+  } else if (loadingUsersError) {
+    content = <div>Oups Bugsies happened</div>;
+  } else {
+    content = listOfUsers.map((user) => {
+      return (
+        <div key={user.id} className="mb-2 border rounded">
+          <div className="flex p-2 justify-between items-center cursor-pointer">
+            {user.name}
+          </div>
         </div>
-      </div>
-    );
-  });
+      );
+    });
+  }
 
   return (
     <div>
@@ -49,7 +50,7 @@ export default function UsersList() {
         </Button>
         {creatingUserError && 'Error creating a user...'}
       </div>
-      {renderedUsers}
+      {content}
     </div>
   );
 }
