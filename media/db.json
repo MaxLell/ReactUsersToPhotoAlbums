@@ -7,32 +7,14 @@
     {
       "name": "Alonzo Kirlin",
       "id": 2
-    },
-    {
-      "name": "Robin Witting",
-      "id": 4
-    },
-    {
-      "name": "Georgia Blick",
-      "id": 9
-    },
-    {
-      "name": "Bob Jacobi MD",
-      "id": 10
-    },
-    {
-      "name": "Jose Spencer",
-      "id": 11
-    },
-    {
-      "name": "Nichole Ratke",
-      "id": 12
-    },
-    {
-      "name": "Elvira Muller-Gutkowski",
-      "id": 13
     }
   ],
-  "albums": [],
+  "albums": [
+    {
+      "id": 10,
+      "title": "Surf Trips",
+      "userId": 1
+    }
+  ],
   "photos": []
 }
