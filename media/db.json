@@ -1,19 +1,86 @@
 {
   "users": [
     {
-      "name": "Betty Bogisich",
-      "id": 1
+      "name": "Jerald Mitchell",
+      "id": 3
     },
     {
-      "name": "Alonzo Kirlin",
-      "id": 2
+      "name": "Jonathan Sawayn DVM",
+      "id": 4
+    },
+    {
+      "name": "Russell Hackett",
+      "id": 5
+    },
+    {
+      "name": "Jonathan Kassulke",
+      "id": 6
+    },
+    {
+      "name": "Samantha Hand",
+      "id": 7
     }
   ],
   "albums": [
     {
-      "id": 10,
-      "title": "Surf Trips",
-      "userId": 1
+      "userId": 3,
+      "title": "Licensed Concrete Shoes",
+      "id": 1
+    },
+    {
+      "userId": 3,
+      "title": "Small Fresh Cheese",
+      "id": 2
+    },
+    {
+      "userId": 4,
+      "title": "Awesome Fresh Hat",
+      "id": 3
+    },
+    {
+      "userId": 3,
+      "title": "Licensed Concrete Bacon",
+      "id": 4
+    },
+    {
+      "userId": 4,
+      "title": "Tasty Steel Sausages",
+      "id": 5
+    },
+    {
+      "userId": 4,
+      "title": "Elegant Concrete Tuna",
+      "id": 6
+    },
+    {
+      "userId": 5,
+      "title": "Recycled Rubber Shoes",
+      "id": 7
+    },
+    {
+      "userId": 7,
+      "title": "Fantastic Frozen Chair",
+      "id": 8
+    },
+    {
+      "userId": 7,
+      "title": "Oriental Concrete Cheese",
+      "id": 9
+    },
+    {
+      "userId": 3,
+      "title": "Awesome Cotton Keyboard",
+      "id": 10
+    },
+    {
+      "userId": 3,
+      "title": "Practical Concrete Fish",
+      "id": 11
+    },
+    {
+      "userId": 3,
+      "title": "Luxurious Cotton Pants",
+      "id": 12
     }
   ],
   "photos": []
