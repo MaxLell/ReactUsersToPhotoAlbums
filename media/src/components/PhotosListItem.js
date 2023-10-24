@@ -3,12 +3,13 @@ import { GoTrash } from 'react-icons/go';
 
 function PhotosListItem({ photo }) {
   const [removePhoto] = useRemovePhotoMutation();
-  const handleDeletePhoto = (photo) => {
+  const handleRemovePhoto = () => {
+    console.log(photo);
     removePhoto(photo);
   };
   return (
     <div
-      onClick={handleDeletePhoto}
+      onClick={handleRemovePhoto}
       className="relative m-2 cursor-pointer"
     >
       <img className="h-20 w-20" src={photo.url} alt="random thing" />
