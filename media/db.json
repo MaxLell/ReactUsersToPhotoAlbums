@@ -1,66 +1,47 @@
 {
   "users": [
     {
-      "name": "Jerald Mitchell",
-      "id": 3
-    },
-    {
-      "name": "Jonathan Sawayn DVM",
-      "id": 4
-    },
-    {
-      "name": "Russell Hackett",
-      "id": 5
-    },
-    {
-      "name": "Jonathan Kassulke",
-      "id": 6
-    },
-    {
-      "name": "Samantha Hand",
-      "id": 7
-    },
-    {
-      "name": "Chelsea Kirlin",
-      "id": 8
+      "name": "Christine Keebler",
+      "id": 1
     }
   ],
   "albums": [
     {
-      "userId": 4,
-      "title": "Awesome Fresh Hat",
+      "userId": 1,
+      "title": "Generic Plastic Bike",
+      "id": 1
+    }
+  ],
+  "photos": [
+    {
+      "albumId": 1,
+      "url": "https://loremflickr.com/150/150?lock=3848175550988288",
+      "id": 1
+    },
+    {
+      "albumId": 1,
+      "url": "https://loremflickr.com/150/150?lock=7229397125824512",
+      "id": 2
+    },
+    {
+      "albumId": 1,
+      "url": "https://loremflickr.com/150/150?lock=2665623547019264",
       "id": 3
     },
     {
-      "userId": 4,
-      "title": "Tasty Steel Sausages",
+      "albumId": 1,
+      "url": "https://loremflickr.com/150/150?lock=1236879649275904",
+      "id": 4
+    },
+    {
+      "albumId": 1,
+      "url": "https://loremflickr.com/150/150?lock=5035712076316672",
       "id": 5
     },
     {
-      "userId": 4,
-      "title": "Elegant Concrete Tuna",
+      "albumId": 1,
+      "url": "https://loremflickr.com/150/150?lock=5175987119587328",
       "id": 6
-    },
-    {
-      "userId": 3,
-      "title": "Awesome Cotton Keyboard",
-      "id": 10
-    },
-    {
-      "userId": 3,
-      "title": "Luxurious Cotton Pants",
-      "id": 12
-    },
-    {
-      "userId": 3,
-      "title": "Sleek Soft Shoes",
-      "id": 13
-    },
-    {
-      "userId": 3,
-      "title": "Oriental Fresh Keyboard",
-      "id": 14
     }
-  ],
-  "photos": []
+  ]
 }
