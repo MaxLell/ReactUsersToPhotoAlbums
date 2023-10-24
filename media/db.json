@@ -19,6 +19,10 @@
     {
       "name": "Samantha Hand",
       "id": 7
+    },
+    {
+      "name": "Chelsea Kirlin",
+      "id": 8
     }
   ],
   "albums": [
@@ -26,11 +30,6 @@
       "userId": 4,
       "title": "Awesome Fresh Hat",
       "id": 3
-    },
-    {
-      "userId": 3,
-      "title": "Licensed Concrete Bacon",
-      "id": 4
     },
     {
       "userId": 4,
@@ -46,11 +45,6 @@
       "userId": 3,
       "title": "Awesome Cotton Keyboard",
       "id": 10
-    },
-    {
-      "userId": 3,
-      "title": "Practical Concrete Fish",
-      "id": 11
     },
     {
       "userId": 3,
